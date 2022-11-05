@@ -1,0 +1,12 @@
+num=int(input('enter number'))
+n=num
+l=len(str(num))
+s=0
+while n>0:
+    r=n%10
+    s=s+(r**l)
+    n=n//10
+if s==num :
+    print(num,'is armstrom number')
+else:
+    print('number is not armstrom')
